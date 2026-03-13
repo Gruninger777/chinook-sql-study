@@ -1,6 +1,7 @@
 -- Artista com maior faturamento
+-- Soma o valor vendido das faixas de cada artista
 
-SELECT TOP 1
+SELECT TOP 10
     a.Name AS Artista,
     SUM(il.UnitPrice * il.Quantity) AS [Total Faturado]
 FROM Artist a
